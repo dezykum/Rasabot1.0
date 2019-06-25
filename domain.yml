@@ -1,0 +1,35 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - docappointment
+  - specialization
+  - categories
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_docappointment
+- utter_specialization
+- utter_categories
+- action_db
+
+slots:
+  categories: 
+    type: text
+
+templates:
+  utter_greet:
+  - text: "Hi, I am your Doc Assistent, What can i help you today?"
+  utter_docappointment:
+  - text: "Please select options below. \n Specialization \n for a particular Doctor \n Based on Date and Time"
+  utter_specialization:
+  - text: "Please select the specialization below \n Cardiologist \n Dermatologist \n Gynecologist \n Neurologist \n General Physician"
+  utter_categories:
+  - text: "Here is your details"
+
+
+  utter_goodbye:
+  - text: "Bye"
+

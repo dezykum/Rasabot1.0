@@ -1,0 +1,88 @@
+2019-06-17 18:38:05,606 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "c:\python3.6\Lib\asyncio\base_events.py", line 1062, in create_server
+    sock.bind(sa)
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "c:\python3.6\Lib\asyncio\base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "c:\python3.6\Lib\asyncio\base_events.py", line 1066, in create_server
+    % (sa, err.strerror.lower()))
+OSError: [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5005): only one usage of each socket address (protocol/network address/port) is normally permitted
+2019-06-17 18:40:58,571 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/rasa/webhooks/rest/webhook?stream=false&token=HTTP/1.1'
+Traceback (most recent call last):
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /rasa/webhooks/rest/webhook not found
+2019-06-17 18:42:06,446 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/rasa/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /rasa/webhooks/rest/webhook not found
+2019-06-17 18:42:13,962 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/'
+Traceback (most recent call last):
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 446, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method POST not allowed for URL /
+2019-06-17 18:43:07,391 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/rasa/webhooks'
+Traceback (most recent call last):
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /rasa/webhooks not found
+2019-06-17 18:49:40,488 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/parse?stream=false&token=HTTP/1.1'
+Traceback (most recent call last):
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /parse not found
+2019-06-17 18:50:05,752 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/rasa/webhooks/rest/webhook?stream=false&token=HTTP/1.1'
+Traceback (most recent call last):
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /rasa/webhooks/rest/webhook not found
+2019-06-17 18:50:30,618 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/rasa/webhooks?stream=false&token=HTTP/1.1'
+Traceback (most recent call last):
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /rasa/webhooks not found
+2019-06-17 18:50:43,908 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/?stream=false&token=HTTP/1.1'
+Traceback (most recent call last):
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\dezy.kumari\desktop\rasa1.0\rasa1env\lib\site-packages\sanic\router.py", line 446, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method POST not allowed for URL /
